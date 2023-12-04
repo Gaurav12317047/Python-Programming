@@ -1,0 +1,23 @@
+//problem statement :-Create a Car class
+
+
+//Define a class named Car.
+//The Car class should have the following attributes:
+//make (string): representing the car's manufacturer.
+//model (string): representing the car's model.
+//year (integer): representing the year the car was manufactured.
+//mileage (float): representing the number of miles the car has been driven.
+//The class should have a method named display_info that prints out the car's information in a readable format.
+class Car:
+    def __init__(self, make, model, year, mileage):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.mileage = mileage
+
+    def display_info(self):
+        print(f"{self.year} {self.make} {self.model}, Mileage: {self.mileage} miles")
+
+# Example usage:
+car = Car("Toyota", "Camry", 2022, 15000.5)
+car.display_info()
